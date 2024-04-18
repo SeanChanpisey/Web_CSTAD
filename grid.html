@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      *{
+        background-origin: border-box;
+      }
+      :root {
+        --primary-color: blue;
+      }
+      
+      .container {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(6, auto);
+        gap: 20px;
+      }
+      p {
+        font-size: 20px;
+      }
+      .a {
+        border-radius: 5px;
+        padding: 10px;
+        background-color: black;
+        color: white;
+        grid-column: 1 / span 3;
+      }
+      .b {
+        padding: 10px;
+        background-color: whitesmoke;
+        border: 1px solid black;
+      }
+      .c {
+        padding: 10px;
+        background-color: purple;
+        color: white;
+        grid-column: 1 / span 4;
+      }
+      .d {
+        padding: 10px;
+        background-color: whitesmoke;
+        border: 1px solid black;
+        grid-column: 1 / span 2;
+        & small {
+          position: relative;
+
+          background-color: green;
+          color: aliceblue;
+        }
+      }
+      .e {
+        padding: 10px;
+        background-color: whitesmoke;
+        border: 1px solid black;
+        grid-column: 3 / span 2;
+      }
+      .f {
+        padding: 10px;
+        background-color: whitesmoke;
+        border: 1px solid black;
+        grid-column: 1 / span 3;
+      }
+      .g {
+        padding: 10px;
+        background-color: whitesmoke;
+        border: 1px solid black;
+      }
+      .h {
+        padding: 10px;
+        background-color: whitesmoke;
+        border: 1px solid black;
+        grid-column: 1 / span 2;
+      }
+      .i {
+        padding: 10px;
+        background-color: whitesmoke;
+        border: 1px solid black;
+        grid-column: 3 / span 1;
+      }
+      .j {
+        padding: 10px;
+        background-color: whitesmoke;
+        border: 1px solid black;
+        grid-column: 4;
+      }
+      .k {
+        padding: 10px;
+        background-color: whitesmoke;
+        border: 1px solid black;
+        grid-column: 1 / span 4;
+      }
+      @media screen and (width < 600px) {
+        .container {
+          display: flex;
+          flex-direction: column;
+        }
+        .c {
+          background-color: var(--primary-color);
+        }
+
+      }
+      .example {
+        width: 100%;
+        height: 200px;
+        background-image: url(https://gridbyexample.com/img/inflicted.png);
+        background-color: black;
+        color: white;
+        padding: .5rem 0 0 0;
+        margin: 0;
+        font-size: 30px;
+        
+      }
+       
+      li{
+        color: black;
+        display: list-item;
+        unicode-bidi: isolate;
+      }
+      ifram{
+        border-top-width: 0px;
+        border-bottom-width: 0px;
+        border-left-width: 0px;
+        border-right-width: 0px;
+      }
+      a{
+        transition: all .3s;
+        background: transparent;
+      }
+      .main .nav{
+        list-style: none;
+        margin: 0 auto;
+        width: 90%;
+        max-width: 1600px;
+        padding: 0;
+        display: flex;
+        justify-content: space-between;
+      }
+      ul li,ol li{
+        margin-bottom: 0;
+      }
+      header{
+        background-color: black;
+        background-image: url(https://gridbyexample.com/img/inflicted.png);
+        color: aliceblue;
+        padding: .5rem 0 0 0;
+        margin: 0;
+      }
+      .main{
+        border-bottom: 1px solid black;
+        background-color: aliceblue;
+        transition: all;
+        transition-duration: .5s;
+        
+      }
+      .footer{
+        background-color: black;
+        background-image: url(https://gridbyexample.com/img/inflicted.png);
+        color: rgb(232, 226, 226);
+        padding: 1rem 0;
+        margin: 4rem 0 0 0;
+        font-size: 85%;
+        justify-content: center;
+      }
+      .footer .wrapper{
+        background-color: gray;
+        padding: 1rem;
+        border-radius: 3px;
+      }
+      .wrapper{
+        margin: 0 auto;
+        width: 90%;
+        max-width: 1600px;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="header">
+      <div class="wrapper">
+        <div class="about">
+          <div class="follow">
+            <iframe src="" frameborder="0"></iframe>
+          </div>
+          <h1>Grid by Example</h1>
+          <p>Everything you need to learn CSS Grid layout</p>
+        </div>
+        <nav class="main">
+          <ul class="nav">
+            <li>Start here</li>
+            <li>Examples</li>
+            <li>Patterns</li>
+            <li>Video torturial</li>
+            <li>Resources</li>
+          </ul>
+        </nav>
+      </div>
+        
+        
+        <nav class="main">
+        <ul class="nav">
+          <li >Start here</li>
+          <li >Examples</li>
+          <li >Patterns</li>
+          <li >vedio torturial</li>
+          <li >resources</li>
+        </ul>
+      </nav>
+    </header>
+    <main class="container">
+      <div class="a">
+        <h1>CSS Grid Layout</h1>
+        <p>
+          This site is a collection of examples, videos and other information to
+          help you learn css Grid layout. Developer and meintained by Rachel
+          Andrew
+        </p>
+      </div>
+      <div class="b">
+        <h1>The Video Tutorial</h1>
+        <p>
+          A collection of short and to the point videos, demonstrating various
+          parts of the CSS Grid Layout specification.
+        </p>
+      </div>
+      <div class="c">
+        <h1>Get Started Guide</h1>
+        <p>
+          A structured guide to resources that will help you to start learning
+          CSS Grid Layout.
+        </p>
+      </div>
+      <div class="d">
+        <h1>The Examples</h1>
+        <p>
+          Small examples of the CSS Grid Layout specification. Each demonstrates
+          a feature of the specification. Includes new Subgrid examples!
+        </p>
+        <small>new</small>
+      </div>
+      <div class="e">
+        <h1>Patterns</h1>
+        <p>
+          Grab & Go. A set of example patterns with fallbacks for older
+          browsers.
+        </p>
+      </div>
+      <div class="f">
+        <h1>Resources</h1>
+        <p>
+          More links to articles, tutorials and conference presentations that
+          will help you learn CSS Grid Layout.
+        </p>
+      </div>
+      <div class="g">
+        <h1>CSS Layout News</h1>
+        <p>
+          Sign up for a weekly email full of CSS Layout links and resources.
+        </p>
+      </div>
+      <div class="h">
+        <h1>Questions?</h1>
+        <p>
+          <strong>Ask me anything</strong> about Grid Layout over at my GitHub
+          Grid AMA.
+        </p>
+      </div>
+      <div class="i">
+        <h1>About CSS Grid</h1>
+        <p>What even is this? Do I need to care?</p>
+      </div>
+      <div class="j">
+        <h1>News</h1>
+        <p>Infrequent updates on this site.</p>
+      </div>
+      <div class="k">
+        <h1>GridBugs!</h1>
+        <p>
+          If you have found a bug in a browser, or want to see what we have
+          found so far, check out this site.
+        </p>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="wrapper">
+        <p>This is a project by Rachel Andrew. Take a look at some of the other things I make.</p>
+        <ul>
+          <li>
+            <a href="https://grabaperch.com/">Perch CMS</a>
+           " - the original Really Little CMS. Designed for speed and simple implementation.
+          </li>
+          <li>
+            <a href="https://noti.st/">Notist</a>
+            " - Slide sharing and much more.Create your public speaking portfolio."
+          </li>
+          <li>
+            <a href="https://thecssworkshop.com/">The CSS workshop</a>
+            " - learn CSS layout with me"
+          </li>
+        </ul>
+        <p class="thank">"This site is hosted on "
+          <a href="https://www.netlify.com/">Netify</a>
+          ",Thank to their free hosting for open source projects."
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
