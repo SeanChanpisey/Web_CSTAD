@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body>
+    <header class=" flex justify-between items-center p-6 bg-white shadow">
+        <div class="flex items-center space-x-4">
+            <img src="../img/CSTAD_120.png" alt="CSATD Logo" class="h-12">
+            <h1 class="text-xl font-semibold">CSATD E-learning</h1>
+        </div>
+        <nav class="flex  justify-between space-x-8">
+            <a href="./index.html" class="text-gray-800 hover:text-purple-600">Home</a>
+            <a href="./body.html" class="text-gray-800 hover:text-purple-600">Course</a>
+            <a href="#" class="text-gray-800 hover:text-purple-600">Pricing</a>
+            <a href="./contactUs.html" class="text-gray-800 hover:text-purple-600">Contact us</a>
+        </nav>
+        <a href="./signIn.html" class="bg-blue-600 text-white px-4 py-2 rounded">Sign in</a>
+    </header>
+    <div class="min-h-screen flex items-center justify-center bg-gray-100">
+        <div class="bg-white p-8 rounded-lg shadow-lg w-full max-w-md">
+            <h1 class="text-2xl font-bold mb-2">Welcome to</h1>
+            <h2 class="text-3xl font-bold text-purple-600 mb-6">Design School</h2>
+            
+            <div class="space-y-4">
+                <button class="w-full bg-white border border-gray-300 rounded-lg py-2 flex items-center justify-center shadow-sm hover:bg-gray-50">
+                    <img src="https://img.icons8.com/color/48/000000/google-logo.png" class="h-5 w-5 mr-2" alt="Google logo"/>
+                    <span class="text-gray-600 font-medium">Login with Google</span>
+                </button>
+                <button class="w-full bg-white border border-gray-300 rounded-lg py-2 flex items-center justify-center shadow-sm hover:bg-gray-50">
+                    <i class="fab fa-facebook-f text-blue-600 mr-2"></i>
+                    <span class="text-gray-600 font-medium">Login with Facebook</span>
+                </button>
+            </div>
+            
+            <div class="flex items-center justify-between my-6">
+                <hr class="w-full border-gray-300">
+                <span class="px-4 text-gray-400">OR</span>
+                <hr class="w-full border-gray-300">
+            </div>
+            
+            <form>
+                <div class="mb-4">
+                    <label class="block text-gray-700">Email</label>
+                    <div class="relative">
+                        <span class="absolute inset-y-0 left-0 flex items-center pl-3 text-gray-400">
+                            <i class="fas fa-envelope"></i>
+                        </span>
+                        <input type="email" class="w-full pl-10 pr-4 py-2 border rounded-lg bg-gray-100 text-gray-700 focus:outline-none focus:bg-white focus:border-purple-500" placeholder="example@gmail.com" value="example@gmail.com">
+                    </div>
+                </div>
+                <div class="mb-4">
+                    <label class="block text-gray-700">Password</label>
+                    <div class="relative">
+                        <span class="absolute inset-y-0 left-0 flex items-center pl-3 text-gray-400">
+                            <i class="fas fa-key"></i>
+                        </span>
+                        <input type="password" class="w-full pl-10 pr-10 py-2 border rounded-lg bg-gray-100 text-gray-700 focus:outline-none focus:bg-white focus:border-purple-500" placeholder="***********" value="***********">
+                        <span class="absolute inset-y-0 right-0 flex items-center pr-3 text-gray-400 cursor-pointer">
+                            <i class="fas fa-eye"></i>
+                        </span>
+                    </div>
+                </div>
+                <div class="flex items-center justify-between mb-6">
+                    <label class="flex items-center text-gray-700">
+                        <input type="checkbox" class="form-checkbox h-4 w-4 text-purple-600">
+                        <span class="ml-2">Remember me</span>
+                    </label>
+                    <a href="#" class="text-sm text-purple-600 hover:underline">Forgot Password?</a>
+                </div>
+                <button type="submit" class="w-full bg-purple-600 text-white py-2 rounded-lg hover:bg-purple-700 focus:outline-none">Login</button>
+            </form>
+            
+            <p class="mt-8 text-center text-gray-700">Don’t have an account? <a href="#" class="text-purple-600 hover:underline">Register</a></p>
+        </div>
+    </div>
+</body>
+</html>
